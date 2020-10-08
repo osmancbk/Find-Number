@@ -1,6 +1,6 @@
 let guess_count = 0;
 
-let random_number = Math.floor(Math.random() * 100 + 1);
+let random_number = Math.floor(Math.random() * 10 + 1);
 console.log(random_number)
 
 document.querySelector("#check_it").addEventListener("click", checkNumber); 
@@ -23,7 +23,7 @@ function checkNumber() {
         
         if (choice) {
             guess_count = 0;
-            random_number = Math.floor(Math.random() * 100 + 1);
+            random_number = Math.floor(Math.random() * 10 + 1);
             answerLabelElement.innerText = "";
 
         }else {
